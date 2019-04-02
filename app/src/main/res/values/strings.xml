@@ -18,7 +18,7 @@
     </string-array>
 
     <string-array name="Area">
-        <item>Square Meter</item>
+        <item>Square Metre</item>
         <item>Square Kilometre</item>
         <item>Square Centimetre</item>
         <item>Square Millimetre</item>
@@ -53,10 +53,11 @@
         <item>Pound</item>
         <item>Ounce</item>
         <item>Carrat</item>
+        <item>Stone</item>
     </string-array>
 
     <string-array name="Vol">
-        <item>Cubic Meter</item>
+        <item>Cubic Metre</item>
         <item>Cubic Kilometre</item>
         <item>Cubic Centimetre</item>
         <item>Cubic Millimetre</item>
