@@ -95,7 +95,6 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
                    y = 0.0;
 
                     // calculations
-
                    switch (spinner2.getSelectedItem().toString()) {
                        case "Kilometre":
                        case "Kilogram":
@@ -425,48 +424,33 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
                     {
                         y = Double.parseDouble(editText1.getText().toString());
                         if (spinner3.getSelectedItem().toString().equals("Fahrenheit"))
-                        {
                             y = (y * 9/5) + 32;
-                        }
                         else if (spinner3.getSelectedItem().toString().equals("Kelvin"))
-                        {
                             y += 273.15;
-                        }
                     }
 
                     else if (spinner2.getSelectedItem().toString().equals("Fahrenheit"))
                     {
                         y = Double.parseDouble(editText1.getText().toString());
                         if (spinner3.getSelectedItem().toString().equals("Celsius"))
-                        {
                             y = (y - 32) * 5/9;
-                        }
                         else if (spinner3.getSelectedItem().toString().equals("Kelvin"))
-                        {
                             y = (y - 32) * 5/9 + 273.15;
-                        }
                     }
 
                     else if (spinner2.getSelectedItem().toString().equals("Kelvin"))
                     {
                         y = Double.parseDouble(editText1.getText().toString());
                         if (spinner3.getSelectedItem().toString().equals("Celsius"))
-                        {
                             y -= 273.15;
-                        }
                         else if (spinner3.getSelectedItem().toString().equals("Fahrenheit"))
-                        {
                             y = (y - 273.15) * 9/5 + 32;
-                        }
                     }
                    textView1.setText(String.valueOf(new DecimalFormat(".##########").format(y)));
                }
            });
 
-
-
         //set values
-
         Main = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_list_item_1,
                 getResources().getStringArray(R.array.Main));
         Main.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -510,8 +494,6 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
         editText1.setText("1");
 
         spinner1.setOnItemSelectedListener(this);
-        //spinner2.setOnItemSelectedListener(this);
-        //spinner3.setOnItemSelectedListener(this);
     }
 
     @Override
