@@ -20,7 +20,8 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
 
     Spinner spinner1, spinner2, spinner3;
 
-    TextView editText1, textView1;
+    TextView editText1;
+    TextView textView1;
 
     Double y;
 
